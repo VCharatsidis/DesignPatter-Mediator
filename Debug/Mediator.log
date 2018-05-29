@@ -1,0 +1,35 @@
+﻿  Person.cpp
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(7): error C2143: syntax error: missing ';' before '<'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(7): error C2238: unexpected token(s) preceding ';'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(11): error C2143: syntax error: missing ';' before '<'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(11): error C2238: unexpected token(s) preceding ';'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(16): error C2061: syntax error: identifier 'vector'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(18): error C2143: syntax error: missing ';' before '*'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(18): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(18): error C2238: unexpected token(s) preceding ';'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(21): error C2143: syntax error: missing ',' before '&'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(23): error C2061: syntax error: identifier 'Person'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(16): error C2065: 'persons': undeclared identifier
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.h(16): error C2614: 'ChatRoom::PersonReference': illegal member initialization: 'people' is not a base or member
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.cpp(11): error C2660: 'ChatRoom::broadcast': function does not take 2 arguments
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.cpp(22): error C2600: 'Person::~Person': cannot define a compiler-generated special member function (must be declared in the class first)
+  Main.cpp
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(11): error C2143: syntax error: missing ';' before '*'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(11): error C2238: unexpected token(s) preceding ';'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(12): error C2143: syntax error: missing ';' before '<'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(12): error C2238: unexpected token(s) preceding ';'
+  ChatRoom.cpp
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(11): error C2143: syntax error: missing ';' before '*'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(11): error C2238: unexpected token(s) preceding ';'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(12): error C2143: syntax error: missing ';' before '<'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(12): error C2238: unexpected token(s) preceding ';'
+c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\chatroom.cpp(24): error C2039: 'room': is not a member of 'Person'
+  c:\users\vcharatsidis\documents\visual studio 2017\projects\mediator\mediator\person.h(9): note: see declaration of 'Person'
+  Generating Code...
