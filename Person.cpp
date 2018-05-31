@@ -1,6 +1,8 @@
 #include "Person.h"
 #include <iostream>
+#include "ChatRoom.h"
 
+using namespace std;
 
 Person::Person(const string& name): name(name)
 {
@@ -8,7 +10,7 @@ Person::Person(const string& name): name(name)
 
 void Person::say(const string& message) const
 {
-	room->ChatRoom::broadcast(name, message);
+	room->broadcast(name, message);
 }
 
 void Person::receive(const string& origin, const string& message)
@@ -18,6 +20,7 @@ void Person::receive(const string& origin, const string& message)
 	chat_log.emplace_back(s);
 }
 
-Person::~Person()
+void Person::pm(const string& who, const string& message)
 {
+	room->message(name, who, message);
 }

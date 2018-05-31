@@ -4,22 +4,23 @@
 
 struct ChatRoom
 {
-	vector<Person> people;
+	std::vector<Person> people;
 
-	class PersonReference
+	struct PersonReference
 	{
-		vector<Person>& people;
+		std::vector<Person>& people;
 		unsigned int index;
 
-	public:
+		public:
+			
+			PersonReference(std::vector<Person>& persons, const unsigned index) :people(persons), index(index) {}
 
-		PersonReference(vector<Person>& persons, const unsigned index) :people(persons), index(index) {}
-
-		Person* operator->() const;
+			Person* operator->() const;
 	};
 
-	void broadcast(const string& origin, const string& message);
+	void broadcast(const std::string& origin, const std::string& message);
 
 	PersonReference join(Person&& p);
+	void message(const std::string& origin, const std::string& who, const std::string& message);
 
 };

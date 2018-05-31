@@ -1,19 +1,20 @@
 #pragma once
 #include <string>
-#include "ChatRoom.h"
 #include <iostream>
+#include <vector>
 
-using namespace std;
+struct ChatRoom;
 
 struct Person
 {
-	string name;
+	std::string name;
 	ChatRoom* room = nullptr;
-	vector<string> chat_log;
+	std::vector<std::string> chat_log;
 
-	explicit Person(const string& name);
-	void say(const string& message) const;
+	explicit Person(const std::string& name);
+	void say(const std::string& message) const;
 
-	void receive(const string& origin, const string& message);
+	void receive(const std::string& origin, const std::string& message);
+	void pm(const std::string& who, const std::string& message);
 };
 
